@@ -1,6 +1,6 @@
 # Training Seminars
 ### **COS10011 (CWA) FINAL**
-Simple MyFriends Web Application build in PHP & SQL
+Simple Training Seminars Web Application build in PHP & SQL
 
 #### Features
 * Register your intrest from two seminars listed
