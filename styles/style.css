@@ -1,0 +1,175 @@
+/**
+  * File Name    : style.css   
+  * Author       :SanJeosutin
+  * Purpose      : To make the site look more appealing
+  * Date Created : 17-Jun-2020
+  * Last Edited  : 22-Jun-2020
+ **/
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Itim&family=Righteous&display=swap');
+
+/*KEYFRAMES FOR ANIMATED IMAGES*/
+@keyframes imgFade{
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+/* FONT THAT ARE USED FOR THIS WEBSITE
+------------------------------------------
+font-family: 'Black Han Sans', sans-serif;
+font-family: 'Itim', cursive;
+font-family: 'Righteous', cursive;
+------------------------------------------
+*/
+
+        /*MAIN STYLING*/
+body{
+    background-color: #00A8E8;
+}
+
+header{
+    margin:0 12px;
+    border-radius: 0 0 42px ;
+    padding: 14px 25px;
+    background-color: #00171F;
+    
+    user-select: none;
+}
+
+header a{
+    padding: 12px;
+    font: 3em 'Righteous', cursive;
+    color: #FFFFFF;
+}
+
+header a:hover{
+    border-radius: 12px;
+    background-color: #00A8E8;
+    color: #FFFFFF;
+
+    padding: 4px;
+}
+
+.current{
+    border-radius: 12px;
+    color: #00A8E8;
+    
+    padding: 4px;
+}
+
+        /*CONTENT*/
+.content{
+    margin: 10px 25px;
+    padding-left: 35px;
+
+}
+
+.content h1{
+    text-shadow: 4px 3px #FFFFFF;
+    font: 3.25em 'Black Han Sans', sans-serif;
+    letter-spacing: 6px;
+
+    line-height: 5px;
+}
+
+.seminarBlurb{
+    display: flex;
+}
+
+.content img{
+    height: 378px;
+    width: 697.5px;
+}
+
+.content img.first{
+    position: absolute;
+    animation: imgFade ease-in-out infinite 3s alternate;
+}
+
+.content img.second{
+    position: absolute;
+    animation: imgFade ease-in-out infinite 6s alternate;
+}
+
+.content h2{
+    font-family: 'Itim', cursive;
+    font-size: 1em;
+}
+
+.content p{
+    font-family: 'Itim', cursive;
+    color: #00171F;
+
+    margin: 2px 14px;
+}
+
+.content select{
+    margin: 2px 14px;
+}
+
+.content table, td, tr{
+    border: 1px solid #FFFFFF;
+    padding: 3px 6px;
+    margin: 2px 14px;
+
+    background-color: #00171F;
+    color: #FFFFFF;
+}
+
+input{
+    font-family: 'Itim', cursive;
+    background-color: #00171F;
+    color: #FFFFFF;
+}
+input:focus{
+    background-color: #00A8E8;
+}
+
+        /*FOOTER*/
+footer{
+    border-radius: 42px 0 0 0;
+    text-align: center;
+
+    background-color: #00171F;
+}
+
+footer p{
+    font-family: 'Itim', cursive;
+    font-size: 0.85em;
+    margin: 0px;
+    padding: 3.25px;
+
+    color: #FFFFFF;
+}
+
+        /*OTHERS*/
+.nada:hover{
+    background-color: #00171F;
+}
+
+.button{
+    border-radius: 8px;
+    background-color: #00171F;
+    color: #FFFFFF;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+hr{
+    color: #00171F;
+}
+
+.caution{
+    color: #ff0000;
+}
+
+footer{
+    background-image: url("images/footerbg.jpg");
+}
+
+footer p{
+    color: #00171F;
+}

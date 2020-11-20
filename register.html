@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Web seminars">
+    <meta name="keywords" content="seminar, seminars, web seminars, online seminar">
+    <meta name="author" content="SanJeosutin">
+    <link href="styles/style.css" rel="stylesheet" />
+    <link rel="icon" href="images/FinalLogo.jpg" />
+    <script src="scripts/autoFillForm.js"></script>
+    <script src="scripts/validate.js"></script>
+    <title>Training Seminars</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">Index</a>
+        <a class="nada">|</a>
+        <a href="register.html" class="current">Register</a>
+        <a class="nada">|</a>
+        <a href="manager.php">Manage</a>
+    </header>
+    <br>
+    <section class="content">
+        <h1>Register here!</h1>
+       <form id="regForm" method="post" action="process.php">
+           <table>
+               <tr>
+                    <td>
+                        <label for="sRefNumber">Reference Number </label>
+                    </td>
+                    <td>
+                        <input type="text" name="seminarReferenceNumber" id="sRefNumber">
+                    </td>
+               </tr>
+
+               <tr>
+                    <td>
+                        <label for="uName">Username </label>
+                    </td>
+                    <td>
+                        <input type="text" name="username" id="uName">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Qualification </label>
+                    </td>
+                    <td>
+                        <input type="radio" name="qualification" id="underGraduate" value="Undergraduate">
+                        <label for="underGraduate">Undergraduate</label><br>
+                        <input type="radio" name="qualification" id="postGraduate" value="Postgraduate">
+                        <label for="postGraduate">Postgraduate</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Role </label>
+                    </td>
+                    <td>
+                        <select name="Role" id="userRole">
+                            <option value="Organiser">Organiser</option>
+                            <option value="Participant">Participant</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email">Email </label>
+                    </td>
+                    <td>
+                        <input type="email" name="uEmail" id="email">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="uPhoneNum">Phone Number </label>
+                    </td>
+                    <td>
+                        <input type="text" name="PhoneNumber" id="uPhoneNum">
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Register" class="button">
+       </form>
+    </section>
+    <footer>
+        <p>SanJeosutin</p>
+        <p>Bachelor of Computer Science</p> 
+        <p>University of Swinburne</p>
+    </footer>
+</body>
+</html>
