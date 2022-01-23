@@ -6,8 +6,8 @@
   * Last updated : 17-Jun-2020
  **/
 
-    $host = "localhost";
-    $user = "root";
-    $pass = "";
-    $sql_db = "TrainingSeminars_db";
+ $user="sanjqgbl_try";
+	$passWord="yrBuCvBR5HwFPcs";
+	$host="localhost";
+	$dbName="sanjqgbl_projects";
 ?>
